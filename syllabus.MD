@@ -85,7 +85,7 @@ The instructor reserves the right to alter this syllabus based on best practices
 
 1.	ZyBooks Data Structures & Algorithms (custom interactive online textbook) Instructions for registering will be provided in class. A subscription is $88. Students may begin subscribing on May 05, 2020 and the cutoff to subscribe is Nov 06, 2020. Subscriptions will last until Dec 22, 2020.
     - Sign in or create an account at learn.zybooks.com
-    - Enter ZyBooks code: UNCCITSC2214TESTLongFall2020
+    - Enter ZyBooks code: UNCCITSC2214Fall2020
     - Subscribe to the your class section (Y01, Y02, Y06, or Y07; depending on your course section ID) The first time you try to access a ZyBooks module you should be prompted to enter your personal access code you got when you subscribed.
 2.	RealizeIt subscription.  Cost is $36.60.
 3.	Blank composition book for sketching. This should cost $5 or less. 
