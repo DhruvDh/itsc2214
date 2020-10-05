@@ -117,13 +117,11 @@ Also note that due to the current pandemic situation, the course format may be s
 
 ### Online Course Format before Oct. 1
 
-We follow the university instruction on Aug. 27 that  the University is moving to fully online instruction in September with the intention to resume planned hybrid and face-to-face instruction October 1. All sessions would be organized online synchronously through the ZOOM/WebEx in canvas or Twitch outside of Canvas.
+We follow the university instruction on Aug. 27 that  the University is moving to fully online instruction in September with the intention to resume planned hybrid and face-to-face instruction October 1. All sessions would be organized online synchronously through the ZOOM/WebEx in canvas.
 
 ### Hybrid Course format after Oct. 1
 
 This course will be delivered in a format that mix a synchronous online mode with an asynchronous hybrid mode. Students would be expected to attend in-class at scheduled meeting time for your section with social distancing guidelines applied. The mixed mode of this course is meant to provide students with some flexibility in their learning.  
-
-Note: If after the first three weeks, majority of students would feel more comfortable with doing online-only for the rest of the semester, I would try to make that happen.
 
 ### Modular Learning Cycle
 
