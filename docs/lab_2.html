@@ -794,23 +794,6 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
 	font-weight: bold;
 }
 </style>
-<style>.contains-task-list {
-    padding-left: 0;
-}
-
-.contains-task-list li {
-    margin-left: 24px;
-}
-
-.contains-task-list .task-list-item {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.contains-task-list .contains-task-list {
-    padding-left: 20px;
-} </style>
 <style>body {
     background: white;
 }
@@ -1693,15 +1676,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
     </head>
     <body class="vscode-body vscode-light">
-        <h1 id="lab-2-vote-counter-2" id="lab-2-vote-counter-1" data-line="0" class="code-line">Lab 2: Vote Counter</h1>
-<h2 id="introduction-2" id="introduction-1" data-line="2" class="code-line">Introduction</h2>
+        <h1 id="lab-2-vote-counter" id="lab-2-vote-counter-2" data-line="0" class="code-line">Lab 2: Vote Counter</h1>
+<h2 id="introduction" id="introduction-2" data-line="2" class="code-line">Introduction</h2>
 <p data-line="4" class="code-line">In this lab, you will explore arrays and the built in ArrayList class in Java. This lab is very good preparation for Assignment 1. Take a screenshot of each completed part and upload those screenshots along with your code as a zip on Canvas.</p>
-<h2 id="preparation-2" id="preparation-1" data-line="6" class="code-line">Preparation</h2>
+<h2 id="preparation" id="preparation-2" data-line="6" class="code-line">Preparation</h2>
 <ol>
 <li data-line="8" class="code-line">Download <code>VoteCounter.zip</code> from the &quot;Current Lab&quot; Canvas Module.</li>
 <li data-line="9" class="code-line">Open NetBeans, and use File -&gt; Import Project -&gt; From ZIP... to import the project. (Note: sometimes Netbeans says it couldn’t import the project,but if you go to File-&gt;Open Project... and navigate to your NetBeansProjectfolder, the project is there and you can open it).</li>
 </ol>
-<h2 id="part-1-create-an-annotated-uml-diagram-of-the-votecounter-project-2" id="part-1-create-an-annotated-uml-diagram-of-the-votecounter-project-1" data-line="11" class="code-line">Part 1: Create an annotated UML diagram of the VoteCounter project</h2>
+<h2 id="part-1-create-an-annotated-uml-diagram-of-the-votecounter-project" id="part-1-create-an-annotated-uml-diagram-of-the-votecounter-project-2" data-line="11" class="code-line">Part 1: Create an annotated UML diagram of the VoteCounter project</h2>
 <ol>
 <li data-line="13" class="code-line">In your sketchbook, create a UML diagram of the VoteCounter project. Thediagram needs to show the four classes. Each class should follow this template:
 <img src="./lab_1_1.png" alt="template" class="loading" id="image-hash--356254910"></li>
@@ -1714,7 +1697,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <li data-line="17" class="code-line">Now, annotate the UML diagram by writing a brief (one to two bullet point notes)about each class and what it does).</li>
 <li data-line="18" class="code-line">When you are done, take a picture of your UML diagram and save it with the other screenshots for this project. You'll be submitting this along with your code in a zip to Canvas.</li>
 </ol>
-<h2 id="part-2-create-an-arraylist-based-votecounter-2" id="part-2-create-an-arraylist-based-votecounter-1" data-line="21" class="code-line">Part 2: Create an ArrayList-based VoteCounter</h2>
+<h2 id="part-2-create-an-arraylist-based-votecounter" id="part-2-create-an-arraylist-based-votecounter-2" data-line="21" class="code-line">Part 2: Create an ArrayList-based VoteCounter</h2>
 <ol>
 <li data-line="23" class="code-line">
 <p data-line="23" class="code-line">Compile and run the VoteCounter project. This project takes in votes, placesthem in an array, and then counts the votes, adding them to the counts foreach Candidate and reports the results. Pay attention to how theArrayVoteCounter code has to explicitly check the size of both the votes arrayand the spoiledVotes array to ensure that they don’t run out of capacity, andhave to create new, bigger arrays, if that happens.</p>
@@ -1743,7 +1726,7 @@ BUILD SUCCESSFUL (total time: 1 second)
 </blockquote>
 </li>
 <li data-line="41" class="code-line">
-<p data-line="41" class="code-line">Now run tests on the  test file <code>ArrayVoteCounterTest.java</code>. To run this test file, Right click ArrayVoteCounterTest -&gt; Test File. If you implement the test for <code>recordVote</code> correctly, it should pass. If your implementation is not working, check the methods in the source code for classes you use to make sure you are using them correctly.</p>
+<p data-line="41" class="code-line">Now fix a small error on lines 34 and 35 by changing both of the <code>assertEquals</code> to compare with <code>i + 1</code> instead of <code>i</code>. Now run the tests on the  test file <code>ArrayVoteCounterTest.java</code>. To run this test file, Right click ArrayVoteCounterTest -&gt; Test File. If you implement the test for <code>recordVote</code> correctly, it should pass. If your implementation is not working, check the methods in the source code for classes you use to make sure you are using them correctly.</p>
 </li>
 <li data-line="42" class="code-line">
 <p data-line="42" class="code-line">Read through <code>ArrayVoteCounter</code> class and try to understand what it does.</p>
@@ -1779,7 +1762,7 @@ BUILD SUCCESSFUL (total time: 1 second)
 <p data-line="58" class="code-line">In the <code>VoteCounterProject</code> class's <code>main</code> method, change the <code>ArrayVoteCounter</code> object to be a instance of <code>ArrayListCounter</code> object instead, and take a screenshot as proof of the fact that you get similar results. You will be submitting this screenshot in the zip to Canvas. Screenshots do not need to be submitted to WebCAT.</p>
 </li>
 </ol>
-<h2 id="part-3-complete-tests-for-arraylistvotecounter-2" id="part-3-complete-tests-for-arraylistvotecounter-1" data-line="60" class="code-line">Part 3: Complete tests for ArrayListVoteCounter</h2>
+<h2 id="part-3-complete-tests-for-arraylistvotecounter" id="part-3-complete-tests-for-arraylistvotecounter-2" data-line="60" class="code-line">Part 3: Complete tests for ArrayListVoteCounter</h2>
 <ol>
 <li data-line="62" class="code-line">After you’ve finished the implementation, open the ArrayListVoteCounterTest file and follow the instructions inside for testing the modified recordVote() method. (Testing this method will be very similar to the ArrayVoteCounterTest’s recordVote() method.)</li>
 <li data-line="63" class="code-line">When you are done, take a screenshot of tests passing. You will be submitting this screenshot in the zip to Canvas. Screenshots do not need to be submitted to WebCAT.</li>
