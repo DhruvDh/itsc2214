@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="c:/Users/Dhruv Dhamani/.vscode/extensions/manuth.markdown-converter-3.1.2/Resources/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\media\markdown.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\media\highlight.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\.vscode\extensions\bierner.markdown-checkbox-0.1.3\checkboxes.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.6\base.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.6\github-markdown.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\.vscode\extensions\bierner.markdown-preview-github-styles-0.1.6\node_modules\highlight.js\styles\github.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\.vscode\extensions\yzhang.markdown-all-in-one-3.3.0\media\checkbox.css" />
+<link rel="stylesheet" type="text/css" href="c:\Users\Dhruv Dhamani\.vscode\extensions\yzhang.markdown-all-in-one-3.3.0\node_modules\katex\dist\katex.min.css" />
+
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="assignment-1---itsc-2214" id="assignment-1---itsc-2214-1" data-line="0" class="code-line">Assignment 1 - ITSC 2214</h1>
+<p data-line="2" class="code-line">Due October 26th, midnight.</p>
+<h2 id="table-of-contents" id="table-of-contents-1" data-line="4" class="code-line">Table of contents</h2>
+<ul>
+<li data-line="6" class="code-line"><a href="#assignment-1---itsc-2214" data-href="#assignment-1---itsc-2214">Assignment 1 - ITSC 2214</a>
+<ul>
+<li data-line="7" class="code-line"><a href="#table-of-contents" data-href="#table-of-contents">Table of contents</a></li>
+<li data-line="8" class="code-line"><a href="#objectives" data-href="#objectives">Objectives</a></li>
+<li data-line="9" class="code-line"><a href="#instructions" data-href="#instructions">Instructions</a></li>
+<li data-line="10" class="code-line"><a href="#requirements" data-href="#requirements">Requirements</a></li>
+<li data-line="11" class="code-line"><a href="#files-needed" data-href="#files-needed">Files needed</a></li>
+<li data-line="12" class="code-line"><a href="#what-you-must-test" data-href="#what-you-must-test">What you must test</a></li>
+<li data-line="13" class="code-line"><a href="#submission" data-href="#submission">Submission</a></li>
+<li data-line="14" class="code-line"><a href="#grading" data-href="#grading">Grading</a></li>
+<li data-line="15" class="code-line"><a href="#honor-code" data-href="#honor-code">Honor Code</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="objectives" id="objectives-1" data-line="17" class="code-line">Objectives</h2>
+<p data-line="19" class="code-line">At the completion of this assignment, you will have completed an <code>ArrayList</code> implementation of a <code>ShoppingList</code> interface, and completed unit testing of the implementation. By completing this project, you will have gained experience in understanding the difference between interface and implementation, a critical part of encapsulation. You will get experience writing JUnit test cases for methods, to make sure the methods work as expected. You will also become accustomed to the Web-Cat system for auto-grading of code projects and tests. This system may seem frustrating at first, but in industry you will have to check in code that you write to similar systems that will run your code against a bunch of test cases. You can also observe the use of exceptions, how they are passed and handled and how you work with them when writing test cases.</p>
+<h2 id="instructions" id="instructions-1" data-line="21" class="code-line">Instructions</h2>
+<p data-line="23" class="code-line">During this assignment, you will be working with an interface for shopping lists. We provide a completed array implementation of this interface, and an incomplete <code>ArrayList</code> implementation. Your job is to complete the <code>ArrayList</code> implementation. Both implementations adhere to the <code>ShoppingListADT</code> interface. The shopping lists hold Grocery items, and there is a <code>Grocery</code> class that defines what a Grocery item is. While duplicate grocery items are not allowed in the list, the quantities of a grocery item are combined when an attempt is made to add a duplicate <code>Grocery</code>. Through the <code>Grocery</code> class’s <code>compareTo</code> method, entries are determined as duplicates if their name and category match, <strong>regardless of letter case (ie. “bread” is the same as “Bread”)</strong>.</p>
+<h2 id="requirements" id="requirements-1" data-line="25" class="code-line">Requirements</h2>
+<p data-line="27" class="code-line">You must fulfill the following requirements in your implementation.</p>
+<ol>
+<li data-line="29" class="code-line">Complete the three empty methods (<code>remove()</code>, <code>find(),</code> and <code>contains()</code>) in the <code>ShoppingListArrayList.java</code> file. These methods are already implemented in the <code>ShoppingListArray</code> class.</li>
+<li data-line="30" class="code-line">Ensure all methods in both implementations have appropriate JavaDoc comments.</li>
+<li data-line="31" class="code-line">Generate the JavaDoc html files.</li>
+<li data-line="32" class="code-line">Complete the <code>ShoppingListArrayListTest.java</code> (For many tests, we now just throw a false statement which will cause the test cases to fail. You need to complete them.)</li>
+</ol>
+<p data-line="34" class="code-line">Submit your project to Web-Cat.</p>
+<h2 id="files-needed" id="files-needed-1" data-line="36" class="code-line">Files needed</h2>
+<p data-line="38" class="code-line">The files needed to get started are available on Canvas inside of a zipped project called <code>DS_Assignment1_Shopping.zip</code>. Download this, but don’t unzip it. Import the project into NetBeans. In your NetBeans, you will get a project called <code>Shopping</code>. When you first import the project, it will run using the array implementation of <code>ShoppingList</code>. After completing the methods described in the first requirement, the project can be run using the <code>ArrayList</code> implementation. Commented code is provided for switching to this version of the simulation in <code>ShoppingSimulation.java</code>.</p>
+<h2 id="what-you-must-test" id="what-you-must-test-1" data-line="40" class="code-line">What you must test</h2>
+<p data-line="42" class="code-line">Think of your shopping list as having “states.” When your program starts and you create the shopping list, it is in its initial state. At this state, the shopping list has nothing in it, so size should be 0. It should also not allow you to remove any element (since it is empty). Once you start adding elements, then the shopping list is not empty anymore and with every element you add, the shopping list’s size should reflect one more and you should be able to find the element within it. As you remove elements, the shopping list size should decrease and you will no longer be able to find elements that have been removed.</p>
+<p data-line="44" class="code-line">In the function that you implement, make sure that you can handle special cases. For example, can you double-remove an entry? Can you remove an entry that does not exist in the <code>ArrayList</code>?</p>
+<p data-line="46" class="code-line">A test file for the <code>ArrayList</code> implementation is included in the project. Some method tests are provided, but you must implement the tests that are empty. You can run your tests by right-clicking on either the class or test file in NetBeans and selecting ‘test file’.</p>
+<blockquote data-line="48" class="code-line">
+<p data-line="48" class="code-line"><strong>Code coverage note</strong>: Web-cat will run the JUnit tests that you submit and will basically count the percentage of lines of code in your classes that get executed as a result of your test cases. So, you want to try to write test cases that cause all lines of code in all branches of your code, to be executed. (So, if you have an if-else statement, write code in your test case that runs the branch of the if statement when the expression is true, and write other lines of code in your test case that will cause the else clause part of the if statement to be run).</p>
+</blockquote>
+<blockquote data-line="50" class="code-line">
+<p data-line="50" class="code-line"><strong>ShoppingSimulation note</strong>: The project contains a class called <code>ShoppingSimulation.java</code>. This simulation class also has the main method that executes when you run the project. You can run the simulation using the <code>ShoppingListArray</code> class or the <code>ShoppingListArrayList</code> class, depending on which line of code you leave uncommented in the main method. It is important for you to understand that this simulation class is there to give you a sense for how the other classes could be used in a real application. When you get everything working, this simulation will run. But just because this simulation runs, this does NOT mean your code is working perfectly. This simulation does not thoroughly test your code at all! You need to write good test cases to make sure your code is working. Also, note that you don’t need to write a test file to test this simulation.</p>
+</blockquote>
+<h2 id="submission" id="submission-1" data-line="52" class="code-line">Submission</h2>
+<ul>
+<li data-line="54" class="code-line">Submit your assignment to Web-Cat.</li>
+<li data-line="55" class="code-line">Submit Honor Code declaration to Canvas. More on the same later in this document.</li>
+</ul>
+<h2 id="grading" id="grading-1" data-line="57" class="code-line">Grading</h2>
+<ol>
+<li data-line="59" class="code-line">TA Grade on quality of your JavaDoc and algorithmic clarity (20%)</li>
+<li data-line="60" class="code-line">Web-cat style testing* (20%)</li>
+<li data-line="61" class="code-line">Web-cat unit testing, code coverage, and instructor generated test cases (60%)</li>
+</ol>
+<h2 id="honor-code" id="honor-code-1" data-line="63" class="code-line">Honor Code</h2>
+<p data-line="65" class="code-line">Sign and submit the following declaration on Canvas. (Your code is submitted on web-cat, but this signed document must be submitted on Canvas – printing it, signing it and uploading a picture of it is sufficient). Copy-paste the declaration to Word and digitally sign it, or print it out, sign it, and upload a scan of it.</p>
+<p data-line="67" class="code-line">Without this declaration, you will not receive a grade for Assignment 1.</p>
+<pre><code data-line="69" class="code-line"><code><div>I promise that I completed this assignment on my own and did not look at, borrow from or copy assignment code from a classmate or anyone who took the course before. I did not copy the code from sources on the Internet. All the code in this assignment (except what was given by the instructors) was written by me. 
+
+Describe any help you received on this assignment (from a professor or TA or the tutoring center):
+
+
+
+
+
+
+
+
+Signature: 						Date:
+
+
+</div></code></code></pre>
+
+        <script async="" src="c:\Users\Dhruv Dhamani\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\media\index.js"charset="UTF-8"></script>
+
+    </body>
+</html>
