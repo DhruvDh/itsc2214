@@ -83,3 +83,5 @@ Signature: 						Date:
 
 
 ```
+
+*Grocery.java, *ShoppingListADT.java, *ShoppingListArray.java, *ShoppingListArrayList.java, *ShoppingSimulation.java, *list1.txt, *ShoppingListArrayListTest.java, *ShoppingListArrayTest.java
